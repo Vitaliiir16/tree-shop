@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Штучні ялинки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Штучні ялинки</h1>
+
+    <div class="button-container">
+        <a href="add.html" class="create-tree-button">Створити Ялинку</a>
+    </div>
+
+    <div class="sort-container">
+        <button onclick="sortTrees('price')">Сортувати за ціною</button>
+        <button onclick="sortTrees('height')">Сортувати за висотою</button>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Пошук за виробником" onkeyup="searchTrees()">
+    </div>
+
+    <h3>Список ялинок</h3>
+    <div class="trees-list">
+        <ul id="trees"></ul>
+    </div>
+
+    <div class="total-price">
+        <h3>Загальна вартість всіх ялинок: <span id="total-price">0</span> грн</h3>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
